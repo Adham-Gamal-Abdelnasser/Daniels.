@@ -26,6 +26,12 @@ body {
 .title p {
     max-width: 500px;
 }
+.doma {
+    bottom: 50px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+}
 /* ========== S T A N D A R D S ========== */
 /* ========== H E A D E R ========== */
 header {
