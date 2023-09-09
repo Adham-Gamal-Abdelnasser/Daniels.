@@ -1,0 +1,162 @@
+/* ========== S T A N D A R D S ========== */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #e65f78;
+}
+body {
+    font-family: "nunito","montserrat", sans-serif;
+}
+::selection {
+    background-color:  #e65f78b0;
+
+}
+.main-color {
+    color: #e65f78;
+}
+.bg-main-color {
+    background-color: #e65f78;
+}
+.title h2 span {
+    font-weight: 800;
+}
+.title p {
+    max-width: 500px;
+}
+/* ========== S T A N D A R D S ========== */
+/* ========== H E A D E R ========== */
+header {
+    background-image: linear-gradient(#000000c2 , #000000c2) , url("../images/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header p:last-of-type {
+    max-width: 500px;
+}
+header h1 {
+    font-size: clamp(2vw , 60px , 5vw);
+}
+header h1::after {
+    content: "|";
+    animation: typing 5s linear infinite;
+    text-transform: uppercase;
+}
+@keyframes typing {
+    0%{content: "|";}
+    3.5%{content: " |";}
+    7%{content: " p|";}
+    10.5%{content: " ph|";}
+    14%{content: " pho|";}
+    17.5%{content: " phot|";}
+    21%{content: " photo|";}
+    24.5%{content: " photog|";}
+    28%{content: " photogr|";}
+    31.5%{content: " photogra|";}
+    35%{content: " photograp|";}
+    38.5%{content: " photograph|";}
+    42%{content: " photographe|";}
+    45.5%{content: " photographer|";}
+    49%{content: " photographer.|";}
+    52.5%{content: " photographer|";}
+    56%{content: " photographe|";}
+    60%{content: " photograph|";}
+    64%{content: " photograp|";}
+    68%{content: " photogra|";}
+    72%{content: " photogr|";}
+    76%{content: " photog|";}
+    80%{content: " photo|";}
+    84%{content: " phot|";}
+    88%{content: " pho|";}
+    92%{content: " ph|";}
+    96%{content: " p|";}
+    99%{content: " |";}
+    100%{content: "|";}
+}
+/* ========== H E A D E R ========== */
+/* ========== N A V B A R ========== */
+nav .container .nav-link:hover {
+    color: var(--main-color);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+    color: var(--main-color);
+    font-weight: bold;
+}
+/* ========== N A V B A R ========== */
+/* ========== S C R O L L  B A R ========== */
+::-webkit-scrollbar-track {
+    background-color: var(--main-color);
+}
+/* ========== S C R O L L  B A R ========== */
+/* ========== A B O U T ========== */
+.about .container .row .social-links li {
+    width: 40px;
+    height: 40px;
+    transition: all 350ms;
+    border-color: #eee;
+}
+.about .container .row .social-links li a {
+    transition: 350ms;
+    color: black;
+}
+.about .container .row .social-links li:hover a {
+    color: var(--main-color);
+} 
+.about .container .row .social-links li:hover {
+    --bs-border-color: var(--main-color);
+    transform: rotate(45deg)  scale(1.3); 
+}
+/* ========== A B O U T ========== */
+/* ========== P O R T F O L I O ========== */
+.portfolio .container .row .caption {
+    opacity: 0;
+    transition: 350ms;
+}
+.portfolio .container .row .caption:hover {
+    opacity: 0.8;
+}
+.portfolio .container .row .caption .txt {
+    top: 100%;
+    transition: 350ms;
+    right: 50%;
+    transform: translate(50%);
+}
+.portfolio .container .row .caption:hover .txt{
+    top: 40%;
+}
+.portfolio ul {
+    width: fit-content;
+}
+.nav-tabs .nav-item .nav-link {
+    padding: 5px 15px !important;
+    color: black;
+    font-weight: 700;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    border-radius: 100vh;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: transparent;
+}
+/* ========== P O R T F O L I O ========== */
+/* ========== C O N T A C T ========== */
+.contact .btn-submit {
+    padding: 0.5rem 1.5rem;
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 100vh;
+    transition: 350ms;
+}
+.contact .btn-submit:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+/* ========== C O N T A C T ========== */
